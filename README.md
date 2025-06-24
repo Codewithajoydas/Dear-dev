@@ -1,3 +1,4 @@
+![icon-192](https://github.com/user-attachments/assets/fa7708a2-5849-456e-85f8-4ed59657e049)
 # Dear Dev – Letters for the One Who Never Gave Up
 
 Dear Dev is a motivational and personal web app that shares random letters of encouragement specifically crafted for developers, creators, and anyone in need of emotional support. Built with HTML, CSS, and JavaScript, this app is simple, clean, and made with care.
