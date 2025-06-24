@@ -1,0 +1,123 @@
+:root {
+  --bg-color-container: rgba(192, 235, 40, 0.774);
+  --radius: 10px;
+  --color: #000;
+  --trasparent: rgba(0, 0, 0, 0.1);
+  --background-image: linear-gradient(
+    40deg,
+    rgba(192, 235, 40, 0.774),
+    transparent 90%
+  );
+}
+
+[data-theme="dark"] {
+  --bg-color-container: rgba(27, 27, 27, 0.445);
+  --radius: 10px;
+  --trasparent: rgb(0, 0, 0);
+  --color: #ffffff;
+  --background-image: linear-gradient(40deg, rgba(0, 0, 0, 0.774), black 90%);
+}
+
+body {
+  margin: 0;
+  transition: background 0.5s ease-in-out;
+  padding: 0;
+  width: 100vw;
+  font-family: "Playfair Display", serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: var(--background-image);
+  flex-direction: column;
+  position: relative;
+  color: var(--color);
+  user-select: none;
+}
+.container {
+  width: 500px;
+  background: var(--bg-color-container);
+  text-align: center;
+  color: var(--color);
+  position: relative;
+  padding: 10px 30px;
+  height: auto;
+  box-shadow: 10px 10px 3px black;
+  user-select: none;
+  border-radius: 5px;
+}
+.container::before {
+  content: "''";
+  position: absolute;
+  top: -50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 20px;
+  font-size: 150px;
+  height: 40px;
+  left: 30px;
+}
+.container button {
+  border: none;
+  padding: 15px 40px;
+  background: #000;
+  color: wheat;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container button:hover, .container button:focus, .container button:active {
+  border: none;
+  padding: 15px 40px;
+  background: #181818;
+  color: wheat;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: 2px solid black;
+  outline-offset: 1px;
+}
+header {
+  position: absolute;
+  top: 0;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100vw - 80px);
+  margin-top: 10px;
+}
+.audio,
+.theme {
+  cursor: pointer;
+}
+.logo {
+  font-weight: bolder;
+}
+.settings {
+  display: flex;
+  gap: 50px;
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 250px;
+    min-width: 200px !important;
+  }
+}
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  footer a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
