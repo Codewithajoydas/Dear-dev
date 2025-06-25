@@ -1,0 +1,64 @@
+:root{
+    --width:400px;
+    --height:400px;
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    /* background: #000; */
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.container .box{
+    height: 400px;
+    width: 400px;
+    border: 3px dotted rgb(255, 255, 255);
+    position: relative;
+}
+.rs{
+    height: 400px;
+    width: 400px;
+    background: linear-gradient(30deg, rgba(24, 53, 219, 0.692), rgba(233, 11, 222, 0.562) 60%);
+    
+}
+.btn{
+    width: 10px;
+    height: 10px;
+    background: #ffffff;
+    border: 3px solid green;
+    position: absolute;
+    cursor: grab;
+    border-radius:50% ;
+}
+.btn1, .btn2, .btn3, .btn4{
+    position: absolute;
+}
+.btn1{
+    top: -10px;
+    left: 50%;
+}
+.btn2{
+    right: -10px;
+    top: 50%;
+}
+.btn3{
+    bottom: -10px;
+    left: 50%;
+}
+.btn4{
+    left: -10px;
+    top: 50%;
+}
+code{
+    background: rgba(41, 41, 41, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    user-select: all;
+}
